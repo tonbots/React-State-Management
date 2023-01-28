@@ -2,40 +2,46 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  background: #fff;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container input:focus {
+  border-color: #646cff;
+}
+.container input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-size: medium;
+  /* -webkit-transition: 0.5s;
+  transition: 0.5s; */
+  outline: none;
 }
 
-.card {
-  padding: 2em;
-}
+.container ul {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  list-style: decimal;
+  background-color: #eef2ff;
+  color: #475569;
 
-.read-the-docs {
-  color: #888;
+  -webkit-overflow-scrolling: touch;
 }
